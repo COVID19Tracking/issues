@@ -1,1 +1,0 @@
-Issue tracker for https://www.covidtracking.com
