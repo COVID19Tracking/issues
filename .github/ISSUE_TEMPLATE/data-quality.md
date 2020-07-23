@@ -1,6 +1,6 @@
 ---
 name: Data quality
-about: Data quality
+about: For internal use only. 
 title: ""
 labels: "Data quality"
 assignees: ""
