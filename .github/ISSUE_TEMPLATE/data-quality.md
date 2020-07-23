@@ -2,7 +2,7 @@
 name: Data quality
 about: Data quality
 title: ""
-labels: "Data quality","meta","not stale"
+labels: "Data quality"
 assignees: ""
 ---
 
