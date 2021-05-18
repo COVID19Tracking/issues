@@ -6,14 +6,14 @@ jobs:
   autoclose:
     runs-on: ubuntu-latest
     steps:
-    - uses: Renato66/auto-label@v2
+      - uses: Renato66/auto-label@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-comments: true
           default-labels: '["Auto-closed"]'
-    - name: Autoclose issue
-      uses: roots/issue-closer@v1.1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-close-message: "@${issue.user.login} this issue was automatically closed. We are no longer acccepting any new issues."
-        issue-pattern: ${{ secrets.ISSUE_PATTERN }}
+      - name: Autoclose issue
+        uses: roots/issue-closer@v1.1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-close-message: "@${issue.user.login} this issue was automatically closed. We are no longer acccepting any new issues."
+          issue-pattern: ${{ secrets.ISSUE_PATTERN }}
